@@ -6,6 +6,11 @@ A full-stack AI-powered market research tool that performs competitive analysis 
 
 ---
 
+<img width="1440" height="698" alt="Screenshot 2026-03-31 at 4 16 44 PM" src="https://github.com/user-attachments/assets/23e202ef-97d1-4f53-a1bc-3373a01b40a5" />
+<img width="1440" height="695" alt="Screenshot 2026-03-31 at 4 17 09 PM" src="https://github.com/user-attachments/assets/42a8cf2c-aa7c-4af5-a218-643217a2bf40" />
+
+
+
 ## How It Works
 
 1. **Geocode** — the address is resolved to coordinates via the Google Geocoding API
