@@ -2,7 +2,7 @@
 
 A full-stack AI-powered market research tool that performs competitive analysis for any location and business type. Enter an address and business type, and a multi-agent pipeline built on Claude and Google Places API returns a structured report covering competitors, location suitability, foot traffic estimates, and market opportunities.
 
-![Demo](https://img.shields.io/badge/status-active-brightgreen) ![Python](https://img.shields.io/badge/python-3.11+-blue) ![Next.js](https://img.shields.io/badge/next.js-16-black) ![License](https://img.shields.io/badge/license-MIT-blue)
+![Demo](https://img.shields.io/badge/status-active-brightgreen) ![Python](https://img.shields.io/badge/python-3.11+-blue) ![Next.js](https://img.shields.io/badge/next.js-16-black) ![License](https://img.shields.io/badge/license-Apache%202.0-blue)
 
 ---
 
@@ -276,4 +276,4 @@ Deploy the `frontend/` directory to Vercel, AWS Amplify, or any Node.js host. Se
 
 ## License
 
-MIT
+Apache 2.0
