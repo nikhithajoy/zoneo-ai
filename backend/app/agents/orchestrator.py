@@ -117,6 +117,11 @@ class OrchestratorAgent(BaseAgent):
                 ]
                 messages.append({"role": "user", "content": tool_results})
 
+            elif response.stop_reason == "max_tokens":
+                raise RuntimeError(
+                    "Claude hit the max_tokens limit during synthesis. "
+                    "Increase MAX_TOKENS in your .env (current: %d)." % settings.max_tokens
+                )
             else:
                 return next(
                     (b.text for b in response.content if hasattr(b, "text")), ""

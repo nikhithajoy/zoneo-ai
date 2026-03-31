@@ -16,16 +16,19 @@ from app.utils.logger import get_logger
 logger = get_logger(__name__)
 
 
-def _strip_fences(text: str) -> str:
-    """Remove markdown code fences if Claude wraps output in ```json ... ```"""
+def _extract_json(text: str) -> str:
+    """Extract JSON from Claude output, handling prose before/after and markdown fences."""
+    import re
     text = text.strip()
-    if text.startswith("```"):
-        lines = text.splitlines()
-        # Drop first line (```json or ```) and last line (```)
-        lines = lines[1:] if lines[0].startswith("```") else lines
-        if lines and lines[-1].strip() == "```":
-            lines = lines[:-1]
-        text = "\n".join(lines).strip()
+    # Try to extract from ```json ... ``` or ``` ... ``` fence
+    match = re.search(r'```(?:json)?\s*\n([\s\S]*?)\n```', text)
+    if match:
+        return match.group(1).strip()
+    # Fall back: find first { to last }
+    start = text.find('{')
+    end = text.rfind('}')
+    if start != -1 and end != -1 and end > start:
+        return text[start:end + 1]
     return text
 
 
@@ -52,7 +55,7 @@ async def run_research(
     raw_output = await orchestrator.run(task)
     logger.info("Orchestrator complete. Parsing output...")
 
-    cleaned = _strip_fences(raw_output)
+    cleaned = _extract_json(raw_output)
 
     try:
         data = json.loads(cleaned)
