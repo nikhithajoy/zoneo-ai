@@ -1,4 +1,4 @@
-# Market Research Agent
+# Zoneo.AI
 
 A full-stack AI-powered market research tool that performs competitive analysis for any location and business type. Enter an address and business type, and a multi-agent pipeline built on Claude and Google Places API returns a structured report covering competitors, location suitability, foot traffic estimates, and market opportunities.
 
