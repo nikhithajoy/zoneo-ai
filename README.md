@@ -12,7 +12,7 @@ A full-stack AI-powered market research tool that performs competitive analysis 
 <img width="1440" height="696" alt="Screenshot 2026-03-31 at 4 15 40 PM" src="https://github.com/user-attachments/assets/0248c82d-791d-4080-927a-b8db4c43e74b" />
 <img width="<img width="1440" height="646" alt="Screenshot 2026-03-31 at 4 16 05 PM" src="https://github.com/user-attachments/assets/ab55dbcc-085e-4791-b29e-8c86ad910c4d" />
 1440" height="646" alt="Screenshot 2026-03-31 at 4 15 54 PM" src="https://github.com/user-attachments/assets/f5545c9b-1c4f-4b76-8342-57896c0e5252" />
-![Uploading Screenshot 2026-03-31 at 4.16.05 PM.png…]()
+<img width="1440" height="646" alt="Screenshot 2026-03-31 at 4 16 05 PM" src="https://github.com/user-attachments/assets/861b81a5-555b-4ea7-a4f9-987ef1da95d6" />
 <img width="1440" height="573" alt="Screenshot 2026-03-31 at 4 16 19 PM" src="https://github.com/user-attachments/assets/5743e1df-c571-4f68-913b-342cdd0bbf46" />
 
 
