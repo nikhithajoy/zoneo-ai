@@ -24,7 +24,7 @@ A full-stack AI-powered market research tool that performs competitive analysis 
    - **Location Agent** — scores suitability across competition density, accessibility, and demand signals (0–100)
    - **Traffic Agent** — estimates foot traffic from review patterns and opening hours
    - **Gap Agent** — identifies underserved market opportunities in the area
-3. **Synthesis** — the Orchestrator agent combines all four outputs into a final structured report
+3. **Synthesis** — the Orchestrator agent combines all four outputs into a final report
 4. **Display** — the Next.js frontend renders the report as an interactive dashboard
 
 All agents output **JSON only**, making parsing deterministic and reliable.
